@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Question.init({
-    question: DataTypes.STRING,
+    question: DataTypes.STRING, 
     category: DataTypes.STRING
   }, {
     sequelize,

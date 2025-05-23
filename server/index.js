@@ -84,4 +84,4 @@ sequelize.authenticate()
   .catch((error) => {
     console.error('Unable to connect to the database:', error.message);
   });
- 
+  

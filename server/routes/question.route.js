@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
-});
+}); 
 
 // POST /questions => Create a new question
 router.post('/', async (req, res) => {

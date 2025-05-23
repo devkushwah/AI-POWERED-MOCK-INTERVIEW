@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     res.json(answers);
   } catch (error) {
     res.status(500).json({ error: error.message });
-  }
+  } 
 });
 
 // POST /answers => Save a new answer
