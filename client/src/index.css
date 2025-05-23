@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f9f9f9; /* Light mode fallback */
+}
+
+a {
+  @apply text-blue-500 font-medium no-underline;
+}
+a:hover {
+  @apply text-blue-700;
+}
+
+button {
+  @apply rounded-lg border border-transparent px-4 py-2 text-base font-medium bg-gray-800 text-white cursor-pointer transition;
+}
+button:hover {
+  @apply border-blue-500;
+}
+button:focus {
+  @apply outline-none ring-2 ring-blue-500;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #242424;
+    color: rgba(255, 255, 255, 0.87);
+  }
+}
